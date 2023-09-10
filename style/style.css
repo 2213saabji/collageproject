@@ -4,7 +4,7 @@
     border: 0;
 }
 body{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     max-width: 100%;
 }
 .line1{
@@ -94,37 +94,35 @@ body{
 .menu1 li a:visited{
     text-decoration: none;
 }
-.page1{border: 2px solid white;
-    width: 100vw;
-    height: 420px;
-}
-.page11{
-    width:1400px;
+.page1{
+    /* border: 2px solid black; */
+    width: 100%;
     height: 300px;
-    margin: 80px auto 0px;
+    margin: 80px auto 60px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     column-gap: 10px;
 }
-.page1 .page11 div{
+.page1  div{
     background-color: rgba(198, 197, 197, 0.1);
+    margin: 5px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
-.page1 .page11 img{
+.page1 img{
     width: 180px;
-    height: 180px;
-    margin: 10px 50px  0px 70px ;    
+    height: 180px;  
+    /* border: 2px solid black;   */
 }
 
-.page1 .page11 div p{
+.page1 div p{
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.1rem;
-    margin-left: 125px;
-    
+    margin: 15px 0px;
 }
-.page1 .page11 div .para{
-    margin-left: 90px !important;
-}
-.page1 .page11 a{
+
+.page1 a{
     color:  rgba(69, 57, 52,.6);
     text-decoration: none;
 }
@@ -272,80 +270,115 @@ body{
     width: 126px;
     height: 42px;
 }
-
-.page42{
-    
-    width: 1400px;
-    height: 1000px;
-    margin-left: 50px;
-    display: grid;
-    column-gap: 12px;
-    grid-template-columns: repeat(2,1fr);
-}
-.main2{
-    border: 1px solid rgba(203, 201, 201,.3);
-    
-}
-.main2 img{
-    width: 900px;
-    height:910px; 
-    transition: all .6s ease;
-}
-.main2:hover img{
-    transform: scale(1.1);
-    transition: all .6s ease;
-}
-.main2 div{
-    width: 900px;
-    height:910px; 
-    overflow: hidden;
-}
-.main2:hover .a{
-    text-decoration: underline;
-    
-}
-.main2 .a{
-    font-family: 'Poppins', sans-serif;
-    margin-left: 30px;
-    margin-top: 15px;
-    
-}
-.main2 .b{
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 14px;
-    margin-top: 10px;
-    margin-left: 30px;
-}
-.main3{
-    background-color: rgb(238, 240, 241);
-    overflow: hidden;
-    position: relative;
-}
-.main3 img{
-    width:700px ;
-    height: 850px;  
-    transform: scale(1);
-    position: absolute;
-    right: -100px;
-    transition: all .6s ease; 
-}
-.main3:hover img{
-    transform: scale(1.1);
-    transition:all .6s ease;
-}
-.main3 p{
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-}
 .page4 .page41{
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
-    margin-left: 50px;
+    margin-left: 5%;
     padding-bottom: 20px;
 }
+.page4{
+    width: 100%;
+}
+.page42{
+    width: 90%;
+    height: 900px;
+    margin: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.page42 .main2{
+   width: 60%;
+   height: 100%;
+   border: 1px solid rgba(203, 201, 201,.3);
+   font-family: 'Poppins', sans-serif;
+}
+.page42 .main3{
+    width: 39%;
+    height: 100%;
+    background-color: rgb(238, 240, 241);
+    font-family: 'Poppins', sans-serif;
+}
+.page42 p{
+    margin-left: 5px;
+}
+
+.page42 img{
+    width: 100%;
+    height: 90%;
+}
+
+    /* .page42{
+        width: 1400px;
+        height: 1000px;
+        margin-left: 50px;
+        display: grid;
+        column-gap: 12px;
+        grid-template-columns: repeat(2,1fr);
+        border: 2px solid black;
+    }
+    .main2{
+        border: 1px solid rgba(203, 201, 201,.3);
+    }
+    .main2 img{
+        width: 900px;
+        height:910px; 
+        transition: all .6s ease;
+    }
+    .main2:hover img{
+        transform: scale(1.1);
+        transition: all .6s ease;
+    }
+    .main2 div{
+        width: 900px;
+        height:910px; 
+        overflow: hidden;
+    }
+    .main2:hover .a{
+        text-decoration: underline;
+        
+    }
+    .main2 .a{
+        font-family: 'Poppins', sans-serif;
+        margin-left: 30px;
+        margin-top: 15px;
+        
+    }
+    .main2 .b{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 14px;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+    .main3{
+        background-color: rgb(238, 240, 241);
+        overflow: hidden;
+        position: relative;
+    }
+    .main3 img{
+        width:700px ;
+        height: 850px;  
+        transform: scale(1);
+        position: absolute;
+        right: -100px;
+        transition: all .6s ease; 
+    }
+    .main3:hover img{
+        transform: scale(1.1);
+        transition:all .6s ease;
+    }
+    .main3 p{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+    }
+    .page4 .page41{
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+        margin-left: 50px;
+        padding-bottom: 20px;
+    } */
 .page5{
     width: 100vw;
     height: 200px;
